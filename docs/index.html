@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2021-12-21 18:37:16 -->
+<!-- RELEASE TIME : 2021-12-21 19:25:10 -->
 <html lang="zh-cn">
 
  <head>
@@ -2300,6 +2300,62 @@
       </tr>
 
       <tr>
+       <td>d3e3084ed2bbfabdde4665ed6b29a5b9</td>
+       <td>CVE-2021-39647</td>
+       <td>2021-12-15 19:15:15 </td>
+       <td>In mon_smc_load_sp of gs101-sc/plat/samsung/exynos/soc/exynos9845/smc_booting.S, there is a possible reinitialization of TEE due to improper locking. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-198713939References: N/A</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-39647">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bfc2765323e447cb98b2349dcc51b743</td>
+       <td>CVE-2021-39643</td>
+       <td>2021-12-15 19:15:15 </td>
+       <td>In ic_startRetrieveEntryValue of acropora/app/identity/ic.c, there is a possible bypass of defense-in-depth due to missing validation of the return value. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-195573629References: N/A</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-39643">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>11097b54f28c1ac3025081c56457c9bd</td>
+       <td>CVE-2021-39642</td>
+       <td>2021-12-15 19:15:15 </td>
+       <td>In synchronous_process_io_entries of lwis_ioctl.c, there is a possible out of bounds write due to a race condition. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-195731663References: N/A</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-39642">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a5ab9e8393c6edc274d7f5a8f9e167f8</td>
+       <td>CVE-2021-39641</td>
+       <td>2021-12-15 19:15:15 </td>
+       <td>Product: AndroidVersions: Android kernelAndroid ID: A-126949257References: N/A</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-39641">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0224a7e3423ef7f249d5d44f62450775</td>
+       <td>CVE-2021-39640</td>
+       <td>2021-12-15 19:15:15 </td>
+       <td>In __dwc3_gadget_ep0_queue of ep0.c, there is a possible out of bounds write due to improper locking. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-157294279References: N/A</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-39640">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>593eea212228be360f908eb6e98b448b</td>
+       <td>CVE-2021-39639</td>
+       <td>2021-12-15 19:15:15 </td>
+       <td>In TBD of fvp.c, there is a possible way to glitch CPU behavior due to a missing permission check. This could lead to local escalation of privilege with physical access to device internals with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-198291476References: N/A</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-39639">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a4792888a92de3d54441e82199f15e9d</td>
+       <td>CVE-2021-39638</td>
+       <td>2021-12-15 19:15:15 </td>
+       <td>In periodic_io_work_func of lwis_periodic_io.c, there is a possible out of bounds write due to a use after free. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-195607566References: N/A</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-39638">详情</a></td>
+      </tr>
+
+      <tr>
        <td>3d0d34bfa5fb7392c3ad160c0e2ee62d</td>
        <td>CVE-2021-0927</td>
        <td>2021-12-15 19:15:11 </td>
@@ -2369,62 +2425,6 @@
        <td>2021-12-15 19:15:10 </td>
        <td>In getService of IServiceManager.cpp, there is a possible unhandled exception due to an integer overflow. This could lead to local denial of service making the lockscreen unusable with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-9Android ID: A-197336441</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-0919">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b4649a76cb5c4ca5e81c2410c21b4b09</td>
-       <td>CVE-2021-0918</td>
-       <td>2021-12-15 19:15:10 </td>
-       <td>In gatt_process_notification of gatt_cl.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution over Bluetooth with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-12Android ID: A-197536150</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-0918">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b62692bea4032e112e2a728905001a53</td>
-       <td>CVE-2021-45043</td>
-       <td>2021-12-15 08:15:07 </td>
-       <td>HD-Network Real-time Monitoring System 2.0 allows ../ directory traversal to read /etc/shadow via the /language/lang s_Language parameter.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-45043">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f1295d1c0e2496a1fad27d80fba8f997</td>
-       <td>CVE-2021-42220</td>
-       <td>2021-12-15 07:15:07 </td>
-       <td>A Cross Site Scripting (XSS) vulnerability exists in Dolibarr before 14.0.3 via the ticket creation flow. Exploitation requires that an admin copies the payload into a box.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-42220">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>15d8991d3675282553890a88ba4038a2</td>
-       <td>CVE-2021-43326</td>
-       <td>2021-12-15 07:15:07 </td>
-       <td>Automox Agent before 32 on Windows incorrectly sets permissions on a temporary directory.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-43326">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1798f71e03e329d8e75bbd3266214da5</td>
-       <td>CVE-2021-43325</td>
-       <td>2021-12-15 07:15:07 </td>
-       <td>Automox Agent 33 on Windows incorrectly sets permissions on a temporary directory. NOTE: this issue exists because of a CVE-2021-43326 regression.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-43325">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4696d96be56be3679ce0ccc5116d17ff</td>
-       <td>CVE-2021-43113</td>
-       <td>2021-12-15 07:15:07 </td>
-       <td>iTextPDF in iText before 7.1.17 allows command injection via a CompareTool filename that is mishandled on the gs (aka Ghostscript) command line in GhostscriptHelper.java.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-43113">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>453306a5c3ba35c00262c801a394e16c</td>
-       <td>CVE-2021-40827</td>
-       <td>2021-12-15 07:15:07 </td>
-       <td>Clementine Music Player through 1.3.1 (when a GLib 2.0.0 DLL is used) is vulnerable to a Read Access Violation on Block Data Move, affecting the MP3 file parsing functionality at memcpy+0x265. The vulnerability is triggered when the user opens a crafted MP3 file or loads a remote stream URL that is mishandled by Clementine. Attackers could exploit this issue to cause a crash (DoS) of the clementine.exe process or achieve arbitrary code execution in the context of the current logged-in Windows user.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-40827">详情</a></td>
       </tr>
 
      </tbody>
